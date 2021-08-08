@@ -1,0 +1,77 @@
+
+ 1. Significance of .csproj and .sln(Solution) file:
+    -- when we create any project in VS, for example - demoApp then the folder get created with all the project stuffs named as demoApp. Also it contains demoApp.csproj file.
+       Apart from this folder, there is .sln file is created.
+       
+       ***Use of Csproj file?
+        -- CSPROJ files are used by Visual Studio to store references to items within a project and to store compilation options.
+        -- Basically the .csproj file contains the list of files in your project, plus the references to system assemblies etc.
+        -- .csproj file contains following content:
+        
+        
+ <Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Student\Data\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
+  </ItemGroup>
+
+</Project>
+
+   
+ 
+    --  A solution is a structure for organizing projects in Visual Studio.   
+    -- We can open the .sln file and can see below content in demoApp.sln file -
+    
+       
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demoApp", "demoApp\demoApp.csproj", "{D764C34E-8884-4179-B599-2C3F13869478}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D764C34E-8884-4179-B599-2C3F13869478}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D764C34E-8884-4179-B599-2C3F13869478}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D764C34E-8884-4179-B599-2C3F13869478}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D764C34E-8884-4179-B599-2C3F13869478}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F1B8339-B90C-4AB4-9955-FAD2B3571A25}
+	EndGlobalSection
+EndGlobal
+
+
+-- The .sln file contains text-based information the environment uses to find and load the name-value parameters for the persisted data and the project VSPackages it references. 
+-- When a user opens a solution, the environment cycles through the preSolution, Project, and postSolution information in the .sln file to load the solution, projects within the solution, and any persisted information attached to the solution.
+-- although you can intentionally write project information to the .sln file if you choose to do so.
+
+
+-- Even if we delete the .sln file we can open and run the individual project using .csproj file.
+-- As per me***, difference could be if we open .sln file then all the projects under it are opened otherwise we wil have to open each project individually using .csproj file.
+
+
+
+
+
+
+
+
