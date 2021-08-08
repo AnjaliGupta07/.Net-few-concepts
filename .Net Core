@@ -1,0 +1,20 @@
+#### .Net core is :
+
+1. Open Source:
+   
+   -- Open source software (OSS) is software that is distributed with its source code, making it available for use, modification, and distribution with its original rights. 
+   -- Source code is the part of software that most computer users don’t ever see; it’s the code computer programmers manipulate to control how a program or application behaves.      -- Programmers who have access to source code can change a program by adding to it, changing it, or fixing parts of it that aren’t working properly.
+   -- Open source code is usually stored in a public repository and shared publicly. Anyone can access the repository to use the code independently or contribute improvements to the design and functionality of the overall project.
+
+
+   https://dotnet.microsoft.com/platform/open-source
+   see below comment on above site for Open for contributions:
+    >> Yes, we do accept contributions! As with any open source project, we don't just blindly accept everything. The pull requests we receive are reviewed for quality and to ensure they align with the goals of .NET.
+    >> We've already accepted over 100,000 contributions from developers from over 3,700 companies outside Microsoft.
+    
+    
+    
+    
+    
+ 2. -- Visual studion IDE exists for Windows and Mac OS both. https://visualstudio.microsoft.com/downloads/
+    -- 
